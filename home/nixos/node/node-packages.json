@@ -1,0 +1,13 @@
+[
+  "typescript",
+  "typescript-language-server",
+  "prettier",
+  "vscode-langservers-extracted",
+  "@olrtg/emmet-language-server",
+  "@astrojs/language-server",
+  "prettier-plugin-astro",
+  "@tailwindcss/language-server",
+  "eslint_d",
+  "@fsouza/prettierd",
+  "live-server"
+]
