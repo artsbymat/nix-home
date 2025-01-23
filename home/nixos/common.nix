@@ -88,6 +88,8 @@ in
     jq
     gh
     gh-copilot
+    nil
+    gnome-calculator
   ];
 
   home.file = { };
@@ -115,6 +117,12 @@ in
       package = pkgs.comixcursors.Opaque_White;
       name = "ComixCursors-Opaque-White";
       size = 24;
+    };
+  };
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
     };
   };
 
