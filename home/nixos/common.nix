@@ -77,7 +77,7 @@ in
     nwg-look
     hypridle
     hyprlock
-    mako
+    hyprsunset
     cliphist
     papirus-icon-theme
     grim
@@ -90,6 +90,10 @@ in
     gh-copilot
     nil
     gnome-calculator
+    openpomodoro-cli
+    bluetui
+    zathura
+    dunst
   ];
 
   home.file = { };
@@ -125,6 +129,6 @@ in
       color-scheme = "prefer-dark";
     };
   };
-
+  services.mpris-proxy.enable = true;
   programs.home-manager.enable = true;
 }

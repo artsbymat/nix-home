@@ -87,6 +87,11 @@
   services.gvfs.enable = true;
   services.tumbler.enable = true;
 
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
   ];

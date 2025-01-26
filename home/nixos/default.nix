@@ -5,5 +5,7 @@
     ./git.nix
     ./shell.nix
     ./mpv.nix
+    ./mpd.nix
+    ./ncmpcpp.nix
   ];
 }

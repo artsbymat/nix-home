@@ -31,6 +31,9 @@
       glt = "git log --graph --all --decorate --oneline";
       quartz-sync = "npx quartz sync";
       tldrf = "tldr --list | fzf --preview 'tldr {1} --color=always' --preview-window=right,70% | xargs tldr";
+      pastefile = "curl -F 'file=@-' 0x0.st <";
+      pastecmd = "curl -F 'file=@-' 0x0.st";
+      pasteclip = "wl-paste | curl -F 'file=@-' 0x0.st";
     };
 
     bashrcExtra = ''
