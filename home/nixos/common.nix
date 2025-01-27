@@ -94,6 +94,7 @@ in
     bluetui
     zathura
     dunst
+    file
   ];
 
   home.file = { };
