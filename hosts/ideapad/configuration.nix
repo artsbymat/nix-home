@@ -37,7 +37,6 @@
     enable = true;
     withUWSM = true;
   };
-
   # Configure Pipewire
   security.rtkit.enable = true;
   services.pipewire = {
@@ -71,7 +70,6 @@
     tmux
     brave
     kitty
-    rofi-wayland
     pavucontrol
     wget
     brightnessctl

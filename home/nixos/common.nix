@@ -95,7 +95,22 @@ in
     zathura
     dunst
     file
+    lazydocker
+    surfraw
+    pcsx2
+    bc
   ];
+
+  programs.rofi = {
+    enable = true;
+    package = pkgs.rofi-wayland.override {
+      plugins = with pkgs; [
+        rofi-emoji
+        rofi-calc
+      ];
+    };
+    theme = "gruvbox-dark-soft";
+  };
 
   home.file = { };
 
@@ -130,6 +145,8 @@ in
       color-scheme = "prefer-dark";
     };
   };
+
   services.mpris-proxy.enable = true;
+
   programs.home-manager.enable = true;
 }
