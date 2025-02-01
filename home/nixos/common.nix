@@ -2,9 +2,11 @@
   config,
   lib,
   pkgs,
+  inputs,
   ...
 }:
 let
+  system = "x86_64-linux";
   extraNodePackages = import ./node/default.nix { inherit pkgs; };
 in
 {
@@ -90,7 +92,6 @@ in
     gh-copilot
     nil
     gnome-calculator
-    openpomodoro-cli
     bluetui
     zathura
     dunst
@@ -99,6 +100,10 @@ in
     surfraw
     pcsx2
     bc
+    devenv
+    wtype
+    wf-recorder
+    inputs.zen-browser.packages."${system}".default
   ];
 
   programs.rofi = {

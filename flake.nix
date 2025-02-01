@@ -10,6 +10,7 @@
     };
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
   outputs =
@@ -17,6 +18,7 @@
       self,
       home-manager,
       nixpkgs,
+      zen-browser,
       ...
     }@inputs:
     let

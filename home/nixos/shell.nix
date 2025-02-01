@@ -34,6 +34,8 @@
       pastefile = "curl -F 'file=@-' 0x0.st <";
       pastecmd = "curl -F 'file=@-' 0x0.st";
       pasteclip = "wl-paste | curl -F 'file=@-' 0x0.st";
+      nsf = "ls /nix/store | fzf";
+      cat = "bat --style=plain --pager=never";
     };
 
     bashrcExtra = ''
@@ -66,6 +68,20 @@
   programs.fzf = {
     enable = true;
     enableBashIntegration = true;
+    colors = {
+      bg = "#2d2d2d";
+      "bg+" = "#393939";
+      spinner = "#66cccc";
+      hl = "#6699cc";
+      fg = "#b4b7b4";
+      header = "#6699cc";
+      info = "#ffcc66";
+      pointer = "#66cccc";
+      marker = "#66cccc";
+      "fg+" = "#e0e0e0";
+      prompt = "#ffcc66";
+      "hl+" = "#6699cc";
+    };
   };
 
   programs.direnv = {

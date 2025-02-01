@@ -102,6 +102,9 @@
   services.printing.enable = true;
   services.printing.drivers = [ pkgs.gutenprint ];
 
+  # Power management
+  services.power-profiles-daemon.enable = true;
+
   # Enable Firewall
   networking.firewall.enable = true;
 
