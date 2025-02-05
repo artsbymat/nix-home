@@ -104,6 +104,10 @@ in
     wtype
     wf-recorder
     inputs.zen-browser.packages."${system}".default
+    calcurse
+    pulsemixer
+    peaclock
+    sqlite
   ];
 
   programs.rofi = {

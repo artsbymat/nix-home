@@ -54,6 +54,7 @@
       "networkmanager"
       "wheel"
       "docker"
+      "input"
     ];
     packages = with pkgs; [
       virt-manager
