@@ -108,6 +108,7 @@ in
     pulsemixer
     peaclock
     sqlite
+    imagemagick
   ];
 
   programs.rofi = {
