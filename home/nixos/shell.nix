@@ -41,6 +41,8 @@
         pasteclip = "wl-paste | curl -F 'file=@-' 0x0.st";
         nsf = "ls /nix/store | fzf";
         cat = "bat --style=plain --pager=never";
+        git-artsbymat = "git -c user.name='Rahmat Ardiansyah' -c user.email='artsbymat@gmail.com'";
+        git-rahmatardiansyah = "git -c user.name='Rahmat Ardiansyah' -c user.email='rahmatardiansyah147@gmail.com'";
       };
 
       bashrcExtra = ''
