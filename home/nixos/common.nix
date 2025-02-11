@@ -109,6 +109,8 @@ in
     peaclock
     sqlite
     imagemagick
+    qrencode
+    zbar
   ];
 
   programs.rofi = {
