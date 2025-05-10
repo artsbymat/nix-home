@@ -111,6 +111,7 @@ in
     imagemagick
     qrencode
     zbar
+    mcpelauncher-ui-qt
   ];
 
   programs.rofi = {
